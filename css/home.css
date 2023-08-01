@@ -1,0 +1,124 @@
+.home-inner {
+  width: 100%;
+  height: calc(100vh - 70px);
+  /* border: 1px solid red; */
+  position: absolute;
+  margin-top: 70px;
+}
+
+/* Main Loading Animation */
+
+.main-txt {
+  position: absolute;
+  top: 70px;
+  left: 60px;
+
+  animation: slideup 2s 0.9s linear;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+.main-txt span {
+  display: block;
+  font-family: var(--font-en);
+  font-size: 5em;
+  line-height: 1.3em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: var(--main-color);
+}
+.main-txt span:first-child:before {
+  content: "< ";
+}
+.main-txt span:nth-child(3):after {
+  content: " />";
+}
+.bar { 
+  position: absolute;
+  right: 380px;
+  bottom: 5px;
+  width: 3.5px;
+  height: 63px;
+  background-color: var(--main-color);
+  transform: translateY(-15px);
+  margin-left: 20px;
+
+  animation: bar 0.75s ease-in-out infinite;
+}
+@keyframes bar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 80px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle-img {
+  position: absolute;
+  width: 650px;
+  top: 80px;
+  left: 0;
+  opacity: 0;
+  animation: slideup 2s 1.3s linear both;
+}
+.circle-img img {
+  width: inherit;
+}
+
+/* thisPage Btn */
+.thisPageBtn {
+  border: 1px solid rgb(251, 204, 90) ;
+  background-color: rgb(251, 204, 90);
+  border-radius: 50%;
+  width: 240px;
+  height: 90px;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  cursor: pointer;
+  transform: rotate(-10deg);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  animation: slideup 2.3s 1.5s linear;
+  animation-fill-mode: both;
+  transition: 0.5s;
+}
+
+.thisPageBtn:hover {
+  border: 1px solid rgb(251, 204, 90);
+  background-color: #fff;
+}
+.thisPageBtn a {
+  display: inline-block;
+  margin-top: 33px;
+  margin-left: 30px;
+}
+.thisPageBtn p {
+  font-family: var(--font-kor);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--main-color);
+}
+.thisPageBtn p mark {
+  background-color: #ffffff;
+}

@@ -1,0 +1,49 @@
+.close_btn {
+  color: var(--main-color);
+  font-size: 1.3em;
+}
+#work_detail_section {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+}
+.work_detail_sub {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 80px;
+}
+.work_detail_sub h1{
+  font-family: var(--font-en);
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.work_detail_sub span {
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+.work_detail_slider {
+  width: 100%;
+  height: 600px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+.work_detail_slider .post {
+  height: inherit;
+  padding: 0 15px;
+}
+.work_detail_slider img {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 10px;
+  /* margin: 0 10px; */
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+  /* border: 1px solid red; */
+}
+/* https://pedromc.design/ */
